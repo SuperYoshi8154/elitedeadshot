@@ -1,57 +1,58 @@
+#app > * {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid red;
+  margin: 0;
+}
+
 body {
+  margin: 0;
+  height: 100dvh;
+  width: 100dvw;
+  /* Fonts, Colors  */
   background-color: black;
   color: white;
-  margin: 0;                 
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
-  display: flex;
-}
-
-#header {
-  display: fixed;
-  flex-direction: column;
-  gap: 25px;
-  justify-content: top;
-  text-align: left;
-}
-
-#info {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  place-content: center;
-  place-items: center;
-  margin:auto;
-  flex-grow: 1;
-}
-
-#links {
-  display: flex;
   justify-content: center;
-  gap: 20px;
-
-  ul {
-    list-style: none;
-    padding: 10px 15px;
-    margin: 0;
-    display: block;
-    gap: 20px;
-
-    li {
-      a {
-        text-decoration: none;
-        color: var(--accent);
-        font-weight: bold;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
+  align-items: center;
 }
 
-#spacer {
+header {
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+}
+
+footer {
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+}
+
+#contact-info {
+  text-align: right;
+  padding: 0.25rem 1.5rem;
+  font-size: 1rem;
+}
+
+main {
+  flex: 1; 
   display: flex;
-  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid black;
 }
