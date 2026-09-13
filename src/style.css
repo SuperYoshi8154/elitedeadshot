@@ -2,11 +2,17 @@ body {
   background-color: black;
   color: white;
   margin: 0;                 
-  min-height: 100vh;        
-  display: flex;            
-  justify-content: center;   
-  align-items: center;       
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#header {
+  display: fixed;
   flex-direction: column;
+  gap: 25px;
+  justify-content: top;
+  text-align: left;
 }
 
 #info {
@@ -15,12 +21,8 @@ body {
   gap: 25px;
   place-content: center;
   place-items: center;
+  margin:auto;
   flex-grow: 1;
-
-  @media (max-width: 1024px) {
-    padding: 32px 20px 24px;
-    gap: 18px;
-  }
 }
 
 #links {
@@ -51,5 +53,5 @@ body {
 
 #spacer {
   display: flex;
-  
+  flex-grow: 1;
 }
