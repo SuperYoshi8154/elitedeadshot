@@ -21,12 +21,8 @@ document.querySelector('#app').innerHTML = `
 </main>
 
 <footer>
-  <h2 id="contact-info">Contact me at work.elitedeadshot@gmail.com</h2>
-  <div>
-  <ul class="card">
-    <li><a href="https://github.com/SuperYoshi8154" target="_blank">GitHub</a></li>
-  </ul>
-  <div>
+  <p id="contact-info">Contact me at work.elitedeadshot@gmail.com</p>
+    <a href="https://github.com/SuperYoshi8154" target="_blank">GitHub</a>
 </footer>
 `
 
