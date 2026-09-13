@@ -52,4 +52,12 @@ main {
   width: fit-content;
   height: fit-content;
   border: 1px solid black;
+  list-style: none;
+}
+
+#links{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
 }

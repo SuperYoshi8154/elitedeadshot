@@ -11,19 +11,19 @@ document.querySelector('#app').innerHTML = `
 <main>
   <div class="card">
     <h1>Hi I'm Nora</h1>
-    <p>My name is Nora and I am a web developer</p>
+    <p>My name is Nora and I am a web developer among other things</p>
   </div>
   <div>
   <ul class="card">
-    <li><a href="https://elitedeadshot.app/" target="_blank">Will be something</a></li>
+    <li><a id="links" href="https://elitedeadshot.app/" target="_blank">Will be something</a></li>
   </ul>
   <div>
 </main>
 
 <footer>
+    <a id="links"href="https://github.com/SuperYoshi8154" target="_blank">GitHub</a>
   <p id="contact-info">Contact me at work.elitedeadshot@gmail.com</p>
-    <a href="https://github.com/SuperYoshi8154" target="_blank">GitHub</a>
 </footer>
 `
 
-setupCounter(document.querySelector('#counter'))
+
