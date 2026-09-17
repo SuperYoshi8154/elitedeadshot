@@ -15,7 +15,8 @@ document.querySelector('#app').innerHTML = `
   </div>
   <div class="card">
    <p>Here are projects I am working on.</p>
-   <a class="links" href="https://elitedeadshot.app/" target="_blank">Will be something</a>
+   <a class="links" href="https://github.com/SuperYoshi8154/my-app" target="_blank">Will be something (source)</a>
+  <a class="links" href="https://github.com/SuperYoshi8154/elitedeadshot" target="_blank">This website (source)</a>
   </div>
 </main>
 
