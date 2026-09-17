@@ -11,19 +11,32 @@ document.querySelector('#app').innerHTML = `
 <main>
   <div class="card">
     <h1>Hi I'm Nora</h1>
-    <p>My name is Nora and I am a web developer among other things</p>
+    <p>I am a web developer among other things.</p>
   </div>
-  <div>
-  <ul class="card">
-    <li><a id="links" href="https://elitedeadshot.app/" target="_blank">Will be something</a></li>
-  </ul>
-  <div>
+  <div class="card">
+   <p>Here are projects I am working on.</p>
+   <a class="links" href="https://elitedeadshot.app/" target="_blank">Will be something</a>
+  </div>
 </main>
 
 <footer>
-    <a id="links"href="https://github.com/SuperYoshi8154" target="_blank">GitHub</a>
-  <p id="contact-info">Contact me at work.elitedeadshot@gmail.com</p>
+    <a class="links"href="https://github.com/SuperYoshi8154" target="_blank">GitHub</a>
+    <div id="email-container" class="links"></div>
 </footer>
 `
+function openEmailClient() {
+  const email = "work.elitedeadshot@gmail.com";
+  window.location.href = `mailto:${email}`;
+}
 
+const emailAddress = "work.elitedeadshot@gmail.com";
+const container = document.getElementById("email-container");
+
+container.innerHTML = `<a class="links" href="mailto:${emailAddress}">Email Me</a>`;
+
+function triggerMailtoLink(emailAddress) {
+  const mailLink = document.createElement("a");
+  mailLink.href = `mailto:${emailAddress}`;
+  mailLink.click(); // Programmatically forces the email app to open
+}
 
