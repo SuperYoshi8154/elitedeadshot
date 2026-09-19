@@ -21,8 +21,8 @@ document.querySelector('#app').innerHTML = `
 </main>
 
 <footer>
-    <a class="links"href="https://github.com/SuperYoshi8154" target="_blank">GitHub</a>
-    <a href="mailto:work.elitedeadshot@gmail.com">Email me</a>
+    <a class="links" href="https://github.com/SuperYoshi8154" target="_blank">GitHub</a>
+    <a class="links" href="mailto:work.elitedeadshot@gmail.com">Email me</a>
 </footer>
 `
 
